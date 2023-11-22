@@ -1,0 +1,109 @@
+/* main.css */
+
+/* Set the background color to black for the entire page */
+body {
+    background-color: black;
+    color: white; /* Set text color to white for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center elements vertically on the viewport */ /* Remove default body margin */
+}
+
+/* Style the header */
+h1, h6{
+    color: white;
+    padding-right: 45px;
+}
+
+
+/* Style the container */
+.container {
+    margin:30px;
+    text-align: center;
+    display: flex; /* Use flexbox for two-column layout */
+    
+}
+
+/* Style the table */
+.table {
+    flex: 2;/* Take up remaining space in the container */
+    margin-right: 100px; /* Add some spacing between table and form */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    color: white;
+    padding: 35px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Add borders to table cells */
+}
+
+.table th {
+    background-color: #333;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.table a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.table a:hover {
+    background-color: #555;
+}
+
+/* Style the form container */
+.form-container {
+    flex: 1;
+    text-align: left;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Style the form */
+.form {
+    padding: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.form-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #555;
+}

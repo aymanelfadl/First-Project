@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File Sharing</title>
+    <link rel="stylesheet" href="/main.css">
+  
+</head>
+<body>
+    <h1 class="header">
+        Files Sharing
+   </h1>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="login-form" action="/main_page" method="post">
+                    <input type="text" placeholder="Username" id="login-username" name="lusername">
+                    <input type="password" placeholder="Password" id="login-password" name="lpassword">
+                    <button type="submit">Login</button>
+                    <div class="create-account">
+                        <p>Don't have an account?</p> 
+                        <a href="/creating_acc" class="links"><b>Create Account</b></a>
+                    </div>
+                    <div class="messages">
+                        {{#if message}}
+                            <h4>{{message}}</h4>
+                        {{/if}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h6>
+            &copy; 2023 FILES SHARING
+        </h6>
+    </footer>
+</body>
+</html>

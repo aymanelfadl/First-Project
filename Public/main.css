@@ -1,0 +1,85 @@
+/* main.css */
+
+/* Set the background color to black for the entire page */
+body {
+    background-color: black;
+    color: white; /* Set text color to white for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center elements vertically on the viewport */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Center the form container */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Use a semi-transparent black background for the form container */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Limit the maximum width for better readability */
+    box-shadow: 0 0 10px gray; /* Add a subtle shadow to the form container */
+}
+
+/* Style the h1 and h2 elements */
+h1, h6{
+    color: white;
+    padding-right: 45px;
+}
+
+/* Style the input fields and buttons */
+input[type="text"], input[type="password"], button {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for input fields */
+    color: white;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background on focus */
+}
+
+button {
+    background-color: #333; /* Dark gray background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    width: 80%; /* Make the button width 100% */
+}
+
+button:hover {
+    background-color: #555; /* Slightly darker gray on hover */
+}
+
+/* Style the "Create Account" link */
+.create-account {
+    margin-top: 20px; /* Add spacing between the form and the link */
+    font-size: 16px;
+}
+
+.create-account a {
+    color: whitesmoke; /* Green text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.create-account a:hover {
+    color: #555; /* Slightly darker green on hover */
+}
+
+.files-sharing-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Style the error message */
+.messages h4 {
+    color: red;
+}
